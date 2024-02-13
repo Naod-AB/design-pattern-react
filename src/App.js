@@ -1,8 +1,12 @@
 // import { SplitScreen } from './SplitScreen';
 import { LargePersonListItem } from "./people/LargePersonListItem";
 import { SmallPersonListItem } from "./people/SmallPersonListItem";
+import { LargeProductListItem } from "./products/LargeProductListItem";
+import { SmallProductListItem } from "./products/SmallProductListItem";
 import { RegularList } from "./RegularList";
+import { NumberedList } from "./NumberedList";
 import { people } from "./people/people";
+import { products} from "./products/product";
 
 //1. Split Screen implementation
 // const LeftHandComponent = ({ name }) => {
@@ -23,10 +27,18 @@ function App() {
 			items={people}
 			resourceName="person"
 			itemComponent={SmallPersonListItem} />
-		<RegularList
+		<NumberedList
 			items={people}
 			resourceName="person"
 			itemComponent={LargePersonListItem} />
+		<RegularList
+			items={products}
+			resourceName="product"
+			itemComponent={SmallProductListItem} />
+		<NumberedList
+			items={products}
+			resourceName="product"
+			itemComponent={LargeProductListItem} />
 		</>
 
 //1. Split Screen implementation
