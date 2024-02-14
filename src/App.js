@@ -6,6 +6,7 @@
 // import { DataSource} from './DataSource';
 // import axios from 'axios';
 import { UncontrolledForm } from "./UncontrolledForm";
+import { ControlledForm } from "./ControlledForm";
 
 // for getting data from local storage
 // const getServerData = url => async () => {
@@ -23,8 +24,10 @@ import { UncontrolledForm } from "./UncontrolledForm";
 function App() {
 	return (
 //Uncontrolled form
+<>
 <UncontrolledForm />
-
+<ControlledForm />
+</>
 
 //3. Getting data from data source
 		// <>
